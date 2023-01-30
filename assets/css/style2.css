@@ -1,0 +1,108 @@
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    animation: animate 20s linear infinite;
+
+  }
+
+
+
+  .slider .slide {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+  }
+
+  .slider .slide .caption {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    padding: 30px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+
+  .slider .slide .caption h2 {
+    margin: 0 0 20;
+    padding: 0;
+    color: #fff;
+    font-size: 48px;
+    transition: 0.5s;
+  }
+
+  .slider .slide .caption p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+
+  @media (max-width: 768px) {
+    .slider .slide .caption {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      padding: 20px;
+    }
+    .slider .slide .caption h2 {
+      margin: 0 0 10;
+      font-size: 30px;
+    }
+    .slider .slide .caption p {
+      font-size: 16px;
+    }
+  }
+
+
+  @keyframes move {
+    20%, 100% {
+      transform: translate(200px, 0);
+    }
+  }
+
+
+
+
+  @keyframes animate {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+  .slider .slide1 {
+    background: url(/assets/images/portofolio1.png);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .slider .slide2 {
+    background: url(/assets/images/portofolio2.png);
+    background-size: cover;
+    background-position: center center;
+  }
+
